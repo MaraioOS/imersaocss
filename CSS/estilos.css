@@ -59,14 +59,53 @@ body {
   .site-tittle{
     color: whitesmoke;
     text-align: center;
+    font-family: 'Pacifico', cursive;
   }
   
   .site-subtittle {
     color: teal;
     text-align: center;
     font-style: italic;
+    font-family: 'Fjalla One', sans-serif;
   }
+
+  .banana h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 1.3em;
+    font-size: 2em;
+  }
+
   .img-portfolio {
-    width: 180px;
+    width: 260px;
     height: 180px
+  }
+
+  .banana {
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .banana .grid {
+    display: grid;
+    gap: 3em;
+  }
+
+  .banana figure {
+    text-align: center;
+  }
+
+  @media (min-width: 560px) {
+    .banana .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .banana .grid {
+      grid-template-columns: repeat(3, 240px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 5.5em - 48px);
+    }
   }
